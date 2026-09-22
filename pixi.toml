@@ -45,6 +45,7 @@ numba = ">=0.67.0,<0.68"
 cudatoolkit = ">=11.8.0,<12"
 jupyterlab = ">=4.6.3,<5"
 jupyterlab-h5web = ">=12.8.0,<13"
+twine = ">=7.0.0,<8"
 
 [pypi-options]
 no-build-isolation = ["gsas-ii"]
