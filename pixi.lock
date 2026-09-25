@@ -78,10 +78,6 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/hicolor-icon-theme-0.17-ha770c72_3.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/icu-78.3-py310h44b86e0_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/imagecodecs-2026.8.16-py314hacbdc9c_2.conda
-      - conda: https://conda.anaconda.org/conda-forge/linux-64/intel-compute-runtime-24.52.32224.14-h84d6215_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/linux-64/intel-gmmlib-22.10.2-h7148c6a_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/linux-64/intel-graphics-compiler-1.0.17537.20-h4e6620b_2.conda
-      - conda: https://conda.anaconda.org/conda-forge/linux-64/intel-opencl-clang-14.0.1-h84d6215_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/jxrlib-1.1-hd590300_3.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/keyutils-1.6.3-h7cc23a3_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/kiwisolver-1.5.1-py314h5383ef5_3.conda
@@ -96,7 +92,6 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libbrotlidec-1.2.0-ha411449_4.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libbrotlienc-1.2.0-h018ffa1_4.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libcblas-3.11.0-11_h0358290_openblas.conda
-      - conda: https://conda.anaconda.org/conda-forge/linux-64/libclang-cpp14-14.0.6-default_h7634d5b_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libcrc32c-1.1.2-h9c3ff4c_0.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libcups-2.3.3-h7a8fb5f_6.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libcurl-8.22.0-ha042cf0_0.conda
@@ -130,8 +125,6 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libjpeg-turbo-3.2.0-hb03c661_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libjxl-0.12.0-heb2dce7_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/liblapack-3.11.0-11_h47877c9_openblas.conda
-      - conda: https://conda.anaconda.org/conda-forge/linux-64/libllvm14-14.0.6-hcd5def8_4.conda
-      - conda: https://conda.anaconda.org/conda-forge/linux-64/libllvmspirv14-14.0.5-h629725b_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/liblzma-5.8.3-hb03c661_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libmpdec-4.0.0-hb03c661_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libnghttp2-1.68.1-h74cf4be_1.conda
@@ -206,7 +199,6 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/siphash24-1.9-py314h89acca1_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/snappy-1.2.2-h34e00bb_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/spglib-2.7.0-py314h2cbf5e5_2.conda
-      - conda: https://conda.anaconda.org/conda-forge/linux-64/spirv-tools-2026.3-h7148c6a_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/svt-av1-4.2.0-hd2095e1_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/tk-8.6.13-noxft_h1df4ec4_4.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/tornado-6.5.10-py314h89acca1_0.conda
@@ -1792,76 +1784,6 @@ packages:
   - pkg:pypi/imagecodecs?source=compressed-mapping
   size: 2286582
   timestamp: 1789300278015
-- conda: https://conda.anaconda.org/conda-forge/linux-64/intel-compute-runtime-24.52.32224.14-h84d6215_0.conda
-  sha256: 8559717afa0e85f6b5b20bb7426004058db3ee890ee075144e933f03e9eaaca7
-  md5: 6800a93ae3b5ad13a7e6fcf770bf604f
-  depends:
-  - __glibc >=2.17,<3.0.a0
-  - intel-gmmlib >=22.6.0,<23.0a0
-  - intel-graphics-compiler >=1.0.17537.20,<2.0a0
-  - libgcc >=13
-  - libstdcxx >=13
-  license: MIT
-  license_family: MIT
-  purls: []
-  run_exports:
-    weak:
-    - intel-compute-runtime >=24.52.32224.14,<25.0a0
-  size: 2693733
-  timestamp: 1738624828211
-- conda: https://conda.anaconda.org/conda-forge/linux-64/intel-gmmlib-22.10.2-h7148c6a_0.conda
-  sha256: a916de0f52de5ce16dc7869ca433dc420be55cae6a04592333ae9923545aa096
-  md5: 7d8cc0ba43a18e1d6ddd7142175d6022
-  depends:
-  - __glibc >=2.17,<3.0.a0
-  - libgcc >=15
-  - libstdcxx >=15
-  license: MIT
-  license_family: MIT
-  purls: []
-  run_exports:
-    weak:
-    - intel-gmmlib >=22.10.2,<23.0a0
-  size: 1007001
-  timestamp: 1789121934082
-- conda: https://conda.anaconda.org/conda-forge/linux-64/intel-graphics-compiler-1.0.17537.20-h4e6620b_2.conda
-  sha256: d684e6ec5d2fa90541dd81ba4769e87843d9140e55c0fa44012789f7d34b8a36
-  md5: 698513f17da575e1be821fdcc9af0682
-  depends:
-  - __glibc >=2.17,<3.0.a0
-  - intel-opencl-clang >=14.0.1,<15.0a0
-  - libgcc >=14
-  - libllvm14 >=14.0.6,<14.1.0a0
-  - libllvmspirv14 >=14.0.5,<15.0a0
-  - libstdcxx >=14
-  - libzlib >=1.3.2,<2.0a0
-  - spirv-tools >=2026,<2027.0a0
-  license: MIT
-  license_family: MIT
-  purls: []
-  run_exports:
-    weak:
-    - intel-graphics-compiler >=1.0.17537.20,<2.0a0
-  size: 13849161
-  timestamp: 1780335472761
-- conda: https://conda.anaconda.org/conda-forge/linux-64/intel-opencl-clang-14.0.1-h84d6215_0.conda
-  sha256: 0501d845c47b6a4d38e7fd65f577a64abd6bcbb68a3aa620bdd0e587ee36c9a8
-  md5: d1202273e98488d3ab268e43fad86956
-  depends:
-  - __glibc >=2.17,<3.0.a0
-  - libclang-cpp14 >=14.0.6,<14.1.0a0
-  - libgcc >=13
-  - libllvm14 >=14.0.6,<14.1.0a0
-  - libllvmspirv14 >=14.0.5,<15.0a0
-  - libstdcxx >=13
-  license: NCSA
-  license_family: BSD
-  purls: []
-  run_exports:
-    weak:
-    - intel-opencl-clang >=14.0.1,<15.0a0
-  size: 15612327
-  timestamp: 1727746549758
 - conda: https://conda.anaconda.org/conda-forge/linux-64/jxrlib-1.1-hd590300_3.conda
   sha256: 2057ca87b313bde5b74b93b0e696f8faab69acd4cb0edebb78469f3f388040c0
   md5: 5aeabe88534ea4169d4c49998f293d6c
@@ -2046,22 +1968,6 @@ packages:
   purls: []
   size: 18196
   timestamp: 1789061068819
-- conda: https://conda.anaconda.org/conda-forge/linux-64/libclang-cpp14-14.0.6-default_h7634d5b_1.conda
-  sha256: 698987dc23eeaafdc1e38e4435b70ee4d1e630a71e3ab0df3bcc6fccf45dd572
-  md5: 7a0087336af08b6fd00d51c90c455475
-  depends:
-  - libgcc-ng >=12
-  - libllvm14 >=14.0.6,<14.1.0a0
-  - libstdcxx-ng >=12
-  - libzlib >=1.2.13,<2.0.0a0
-  license: Apache-2.0 WITH LLVM-exception
-  license_family: Apache
-  purls: []
-  run_exports:
-    weak:
-    - libclang-cpp14 >=14.0.6,<14.1.0a0
-  size: 16594518
-  timestamp: 1684407721622
 - conda: https://conda.anaconda.org/conda-forge/linux-64/libcrc32c-1.1.2-h9c3ff4c_0.tar.bz2
   sha256: fd1d153962764433fe6233f34a72cdeed5dcf8a883a85769e8295ce940b5b0c5
   md5: c965a5aa0d5c1c37ffc62dff36e28400
@@ -2473,38 +2379,6 @@ packages:
   purls: []
   size: 18227
   timestamp: 1789061073957
-- conda: https://conda.anaconda.org/conda-forge/linux-64/libllvm14-14.0.6-hcd5def8_4.conda
-  sha256: 225cc7c3b20ac1db1bdb37fa18c95bf8aecef4388e984ab2f7540a9f4382106a
-  md5: 73301c133ded2bf71906aa2104edae8b
-  depends:
-  - libgcc-ng >=12
-  - libstdcxx-ng >=12
-  - libzlib >=1.2.13,<2.0.0a0
-  license: Apache-2.0 WITH LLVM-exception
-  license_family: Apache
-  purls: []
-  run_exports:
-    weak:
-    - libllvm14 >=14.0.6,<14.1.0a0
-  size: 31484415
-  timestamp: 1690557554081
-- conda: https://conda.anaconda.org/conda-forge/linux-64/libllvmspirv14-14.0.5-h629725b_0.conda
-  sha256: 32858ca17db0bb3b9817c17ce89609116e82d9e9f0397b41d86ad02b3b7b1fd0
-  md5: 038bb2be7cd8e4db4e0429de354d0c56
-  depends:
-  - __glibc >=2.17,<3.0.a0
-  - libgcc >=13
-  - libllvm14 >=14.0.6,<14.1.0a0
-  - libstdcxx >=13
-  constrains:
-  - llvmdev  14.0.*
-  - llvm-spirv 14.0.5.* *_0
-  license: NCSA
-  license_family: BSD
-  purls: []
-  run_exports: {}
-  size: 1037933
-  timestamp: 1727743239011
 - conda: https://conda.anaconda.org/conda-forge/linux-64/liblzma-5.8.3-hb03c661_1.conda
   sha256: 9787df8c22a59c9a70d3e5a10db9ad663485e75e9ccc3f09bd092cb7b95e0dab
   md5: 1390b7c5ac0b1d8e447bc5efa6d3c8c2
@@ -3632,23 +3506,6 @@ packages:
   - pkg:pypi/spglib?source=compressed-mapping
   size: 489042
   timestamp: 1789178648081
-- conda: https://conda.anaconda.org/conda-forge/linux-64/spirv-tools-2026.3-h7148c6a_1.conda
-  sha256: 1ff7cdc2e65d3980f977a898d07f4e2b1b6f50dbf7e2fed88b3b4221faf34365
-  md5: ac9adda1573683c31a8c58850e911273
-  depends:
-  - __glibc >=2.17,<3.0.a0
-  - libgcc >=15
-  - libstdcxx >=15
-  constrains:
-  - spirv-headers >=1.4.357.0,<1.4.357.1.0a0
-  license: Apache-2.0
-  license_family: APACHE
-  purls: []
-  run_exports:
-    weak:
-    - spirv-tools >=2026,<2027.0a0
-  size: 2380634
-  timestamp: 1787525383516
 - conda: https://conda.anaconda.org/conda-forge/linux-64/svt-av1-4.2.0-hd2095e1_1.conda
   sha256: 09c242d480632acca31f2a510c9a9f65bb8cca1e82b73d2d0261ec837fff48be
   md5: 3bd5f5f3f6f6431b9f19b35ad4a8ed21
