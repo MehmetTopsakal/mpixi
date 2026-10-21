@@ -1,8 +1,7 @@
 [workspace]
 channels = ["conda-forge"]
-name = "default"
+name = "pixi"
 platforms = ["linux-64", "win-64", "osx-64"]
-version = "2026.10"
 
 #[activation.env]
 #PKG_CONFIG_PATH = "$CONDA_PREFIX/lib/python3.14/site-packages/numpy/_core/lib/pkgconfig:$PKG_CONFIG_PATH"
@@ -11,7 +10,7 @@ version = "2026.10"
 gsasii = { cmd = "python -m GSASII", env = { GSASII_NOPATHHACKING = "true" } }
 copy_opencl_icds_matsci = { cmd = "cp /etc/OpenCL/vendors/nvidia.icd /etc/OpenCL/vendors/intel64.icd /home/mt/mpixi/.pixi/envs/default/etc/OpenCL/vendors/" }
 clone_gsasii = { cmd = "git clone --depth 1 https://github.com/AdvancedPhotonSource/GSAS-II.git" }
-
+clone_easyxrd = { cmd = "git clone --depth 1 https://github.com/MehmetTopsakal/easyXRD.git" }
 
 
 
@@ -22,7 +21,7 @@ default = ["py314"]
 features = ["py313"]
 
 [environments.py313.dependencies]
-wxpython = ">=4.3.1,<5"
+# wxpython = ">=4.3.1,<5"
 
 [feature.py314.dependencies]
 python = ">=3.14,<3.15"
@@ -32,13 +31,10 @@ python = ">=3.13,<3.14"
 
 [dependencies]
 numpy = ">=2.2.1,<3"
-
 h5py = ">=3.12.1,<4"
 imageio = ">=2.36.1,<3"
 matplotlib-base = ">=3.10.0,<4"
 meson-python = ">=0.17.1,<0.18"
-# ninja = "*"
-
 pillow = ">=11.1.0,<12"
 pkg-config = ">=0.29.2,<0.30"
 pyopengl = ">=3.1.6,<4"
@@ -47,7 +43,7 @@ requests = ">=2.32.3,<3"
 scipy = ">=1.15.0,<2"
 tomli = ">=2.2.1,<3"
 wheel = ">=0.45.1,<0.46"
-wxpython = ">=4.2.2,<5"
+# wxpython = ">=4.2.2,<5"
 pip = ">=24.3.1,<25"
 python-build = ">=1.2.2.post1,<2"
 zarr = ">=2.18.3,<4"
@@ -59,25 +55,27 @@ ipython = ">=8.32.0,<9"
 cython = ">=3.0.11,<4"
 seekpath = ">=2.1.0,<3"
 pybaselines = ">=1.2.0,<2"
-tomopy = ">=1.15.3,<2"
-algotom = ">=1.7.0,<2"
-numba = ">=0.67.0,<0.68"
-#cudatoolkit = ">=11.8.0,<12"
 jupyterlab = ">=4.6.3,<5"
 jupyterlab-h5web = ">=12.8.0,<13"
 twine = ">=7.0.0,<8"
-gfortran = ">=16.2.0,<16.3"
+
 pyopencl = ">=2026.1.3,<2027"
-ninja = ">=1.13.2,<2"
+
 
 
 [pypi-options]
 no-build-isolation = ["gsas-ii"]
 
 [target.linux-64.dependencies]
-# intel-compute-runtime = ">=24.52.32224.14,<25"
 intel-opencl-rt = ">=2026.1.1,<2027"
-
+fortran-compiler = "*"
+c-compiler = "*"
+ninja = ">=1.13.2,<2"
+#gfortran = ">=16.2.0,<16.3"
+#cudatoolkit = ">=11.8.0,<12"
+tomopy = ">=1.15.3,<2"
+algotom = ">=1.7.0,<2"
+numba = ">=0.67.0,<0.68"
 
 [pypi-dependencies]
 pyfai = ">=2026.9.0, <2027"
@@ -96,7 +94,9 @@ qtawesome = ">=1.4.2, <2"
 pyqt6 = ">=6.9.1, <7"
 
 
-easyxrd = { git = "https://github.com/MehmetTopsakal/easyXRD.git",  extras = ["notebook"] }
-gsas-ii = { git = "https://github.com/AdvancedPhotonSource/GSAS-II.git",  extras = ["useful"] }
+#easyxrd = { git = "https://github.com/MehmetTopsakal/easyXRD.git",  extras = ["notebook"] }
+#gsas-ii = { git = "https://github.com/AdvancedPhotonSource/GSAS-II.git",  extras = ["useful"] }
+
+easyxrd = { path = "easyXRD", editable = true }
 
 
