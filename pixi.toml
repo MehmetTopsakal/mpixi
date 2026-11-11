@@ -77,6 +77,11 @@ tomopy = ">=1.15.3,<2"
 algotom = ">=1.7.0,<2"
 numba = ">=0.67.0,<0.68"
 
+
+[target.linux-64.pypi-dependencies]
+lemur-fan-control = { path = "lemur-fan-control", editable = true }
+
+
 [pypi-dependencies]
 pyfai = ">=2026.9.0, <2027"
 fabio = ">=2026.6.0, <2027"
